@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de [Nom du client]</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-container">
+      <h1>N'TCHA</h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Accueil -->
+  <section id="accueil" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h2>Bonjour, je suis N'TCHA</h2>
+        <p>Professionnel de santé publique</p>
+        <a href="#projets" class="btn">Voir mes projets</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/photo-client.jpg" alt="[Nom du client]">
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="about">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <p>[Description détaillée, compétences, parcours, passions]</p>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences" class="skills">
+    <div class="container">
+      <h2>Mes compétences</h2>
+      <div class="skill">
+        <h3></h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="95%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3></h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3></h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="80%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets / Slider -->
+  <section id="projets" class="projects">
+    <div class="container">
+      <h2>Mes projets</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide project-card">
+            <img src="images/projet1.jpg" alt="Projet 1">
+            <h3>Projet 1</h3>
+            <p>Courte description du projet.</p>
+          </div>
+          <div class="swiper-slide project-card">
+            <img src="images/projet2.jpg" alt="Projet 2">
+            <h3>Projet 2</h3>
+            <p>Courte description du projet.</p>
+          </div>
+          <!-- Ajouter d'autres projets -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section id="temoignages" class="testimonials">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <div class="swiper mySwiperTestimonials">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <p>"Excellent travail, très professionnel et réactif."</p>
+            <h4>- Client 1</h4>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <p>"Portfolio clair et moderne, je recommande vivement."</p>
+            <h4>- Client 2</h4>
+          </div>
+          <!-- Ajouter d'autres témoignages -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contactez-moi</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+        <p id="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 N'TCHA. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
